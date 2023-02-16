@@ -35,11 +35,11 @@ makeTable = """CREATE TABLE IF NOT EXISTS PLAYERS
 );
 """
 
-mycursor.execute(makeTable)
-mydb.connection.commit()
+# mycursor.execute(makeTable)
+# mydb.connection.commit()
 
-createPlayer = """ INSERT INTO PLAYERS (FIRST_NAME, LAST_NAME, PHONE_NUMBER, DISCORD_ID, ESPORT_GAME) VALUES
-(\'Karter\', \'Crites\', \'number\', \'TheGreatTurboski\', \'Fortnite\');
+createPlayer = """ INSERT INTO PLAYERS (PLAYER_ID, FIRST_NAME, LAST_NAME, PHONE_NUMBER, DISCORD_ID, ESPORT_GAME) VALUES
+(\'2\', \'Karter\', \'Crites\', \'number\', \'TheGreatTurboski\', \'Fortnite\');
 """
 
 # mycursor.execute(createPlayer)
@@ -110,5 +110,5 @@ def deleteRecord():
         else: 
             #Part 4 is needed first
             pass
-2
+
 deleteRecord()
