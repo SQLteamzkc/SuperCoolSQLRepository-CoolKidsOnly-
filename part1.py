@@ -35,21 +35,20 @@ makeTable = """CREATE TABLE IF NOT EXISTS PLAYERS
 mycursor.execute(makeTable)
 mydb.connection.commit()
 
-createPlayer = """ INSERT INTO PLAYERS (FIRST_NAME, LAST_NAME, PHONE_NUMBER, DISCORD_ID, ESPORT_GAME) VALUES
-(\'Karter\', \'Crites\', \'number\', \'TheGreatTurboski\', \'Fortnite\');
-"""
+def createPlayer():
+    print("\nLets make a new player!")
+    #Gets
+    newPlayerFirstName = input("Please enter players first name: ")
+    newPlayerLastName = input("Please enter players last name: ")
+    newPlayerPhoneNumber = input("Please enter players phone number: ")
+    newPlayerDiscordID = input("Please enter players Discord ID: ")
+    newPlayerVideoGame = input("Please enter players esports game: ")
 
-# mycursor.execute(createPlayer)
-# mydb.connection.commit()
-
-sql = "UPDATE PLAYERS SET PHONE_NUMBER = \'330-333-3333\' WHERE PLAYER_ID = 2"
-
-mycursor.execute(sql)
-mydb.connection.commit()
-
-def select(table):
-    mycursor.execute(f"select * from {table};")
+    createPlayer = f""" INSERT INTO PLAYERS (FIRST_NAME, LAST_NAME, PHONE_NUMBER, DISCORD_ID, ESPORT_GAME) VALUES
+    (\'{newPlayerFirstName}\', \'{newPlayerLastName}\', \'{newPlayerPhoneNumber}\', \'{newPlayerDiscordID}\', \'{newPlayerVideoGame}\');
+    """
     
-    print(mycursor.fetchall())
+    mycursor.execute(createPlayer)
+    mydb.connection.commit()
 
-select("PLAYERS")
+createPlayer()

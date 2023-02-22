@@ -37,7 +37,11 @@ def nameSearch():
         rowCount = mycursor.rowcount
 
         if rowCount == 0:
-            print("Record Not Found.")
+            newRecord = ("Record Not Found. Would you like to create one? Y/N ")
+            if newRecord.upper == "Y":
+                pass #New record Function Here
+            else:
+                print()
 
         elif rowCount == 1:
             print(f"1 Record Found. {results}")
@@ -47,15 +51,18 @@ def nameSearch():
         
     except ValueError:
         mycursor.execute(
-            f"SELECT * FROM PLAYERS WHERE LAST_NAME = {lastNameOrID}"
+            f"SELECT * FROM PLAYERS WHERE LAST_NAME = \'{lastNameOrID}\'"
         )
-
 
         results = mycursor.fetchall()
         rowCount = mycursor.rowcount
 
         if rowCount == 0:
-            print("Record Not Found.")
+            newRecord = ("Record Not Found. Would you like to create one? Y/N ")
+            if newRecord.upper == "Y":
+                pass #New record Function Here
+            else:
+                print()
 
         elif rowCount == 1:
             print(f"1 Record Found. {results}")
