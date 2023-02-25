@@ -55,6 +55,20 @@ app.get("/read-2", (req, res) => {
     })
 })
 
+app.post("/delete", (req, res) => {
+    const playerid = req.body.playerid
+
+    db.query("DELETE FROM `PLAYERS` WHERE PLAYER_ID = (?)", 
+    [playerid], 
+    (err, result) => {
+        if(err) {
+            console.log(err);
+        } else {
+            console.log(result);
+        }
+    })
+})
+
 app.listen(3001, () => {
     console.log("Express server running on port 3001")
 })

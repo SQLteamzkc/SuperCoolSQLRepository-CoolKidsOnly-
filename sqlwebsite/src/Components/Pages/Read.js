@@ -13,7 +13,6 @@ function Read() {
             setRecordList(response.data)
         })
     };
-
     const Readall = () => { 
       axios.get('http://localhost:3001/read-2').then((response) => {
           setRecordList(response.data)
@@ -27,7 +26,7 @@ function Read() {
                 <h1 className='font-bold text-3xl'>Look For a Record!</h1>
                 <input className='border border-gray-400 block py-2 my-2 px-4 w-full rounded focus:outline-none hover:border-blue-300 focus:border-blue-600' type='text' placeholder="Player ID" onChange={(e) => setPlayerIDReg(e.target.value)}/>
                 <div className='grid grid-cols-1 grid-rows-2 items-center place-items-center'>
-                  <button type="button" className="bg-sky-500 px-4 py-1 rounded-xl m-2 hover:bg-sky-600 border-2 border-sky-500" onClick={Read1}>Find One</button>
+                  <button type="reset" className="bg-sky-500 px-4 py-1 rounded-xl m-2 hover:bg-sky-600 border-2 border-sky-500" onClick={Read1}>Find One</button>
                   <button type="button" className="bg-sky-500 px-4 py-1 rounded-xl m-2 hover:bg-sky-600 border-2 border-sky-500" onClick={Readall}>Show All Records</button>
                 </div>
             </form>
