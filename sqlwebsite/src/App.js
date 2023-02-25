@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Home from './Components/Pages/Home';
 import Login from './Components/Pages/Login';
-import Signup from './Components/Pages/Signup';
+import Create from './Components/Pages/Create';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>} exact/>
         <Route path='/login' element={<Login/>}/>
-        <Route path='/sign-up' element={<Signup/>}/>
+        <Route path='/sign-up' element={<Create/>}/>
       </Routes>
     </BrowserRouter>
     </>
