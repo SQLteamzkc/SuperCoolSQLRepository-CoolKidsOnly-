@@ -10,8 +10,23 @@ const Navbar = () => {
         </Link>
         <ul className='flex item-center'>
             <li className='p-3 mx-1 font-semibold bg-gray-300 rounded-lg'>
-                <Link to="/sign-up">
-                Create New Record
+                <Link to="/record-create">
+                Create
+                </Link>
+            </li>
+            <li className='p-3 mx-1 font-semibold bg-gray-300 rounded-lg'>
+                <Link to="/record-read">
+                Read
+                </Link>
+            </li>
+            <li className='p-3 mx-1 font-semibold bg-gray-300 rounded-lg'>
+                <Link to="/record-update">
+                Update
+                </Link>
+            </li>
+            <li className='p-3 mx-1 font-semibold bg-gray-300 rounded-lg'>
+                <Link to="/record-delete">
+                Delete
                 </Link>
             </li>
         </ul>
