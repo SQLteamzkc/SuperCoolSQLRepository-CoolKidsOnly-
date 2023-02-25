@@ -9,14 +9,9 @@ const Navbar = () => {
             <h1 className='flex text-2xl font-bold items-center text-[#f29111]'><FiDatabase className='text-[#00758f]'/>Esports DB</h1>
         </Link>
         <ul className='flex item-center'>
-            <li className='p-3 mx-1 font-semibold bg-slate-300 rounded-lg'>
-                <Link to="/login">
-                Login
-                </Link>
-            </li>
             <li className='p-3 mx-1 font-semibold bg-gray-300 rounded-lg'>
                 <Link to="/sign-up">
-                Sign Up
+                Create New Record
                 </Link>
             </li>
         </ul>

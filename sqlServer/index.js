@@ -1,9 +1,34 @@
 const express = require("express")
 const app = express()
 const mysql = require("mysql")
+const cors = require("cors")
+
+app.use(cors())
+app.use(express.json())
 
 const db = mysql.createConnection({
-    
+    user: "jrmcctc4",
+    host: "192.169.144.133",
+    password: "mcctcrocks",
+    database: "jr_team_4",
+})
+
+app.post("/create", (req, res) => {
+    const firstname = req.body.firstname
+    const lastname = req.body.lastname
+    const phonenum = req.body.phonenum
+    const discordid = req.body.discordid
+    const esportsgame = req.body.esportsgame
+
+    db.query('INSERT INTO PLAYERS (FIRST_NAME, LAST_NAME, PHONE_NUMBER, DISCORD_ID, ESPORT_GAME) VALUES (?,?,?,?,?)', 
+    [firstname, lastname, phonenum, discordid, esportsgame], 
+    (err, result) => {
+        if(err) {
+            console.log(err)
+        } else {
+            res.send('Values Inserted into Table')
+        }
+    })
 })
 
 app.listen(3001, () => {
