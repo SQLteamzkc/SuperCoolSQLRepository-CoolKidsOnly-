@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 
 function Hero() {
   return (
-    <div className='w-full h-full bg-black/75'>
+    <div className='w-full h-full min-h-fit min-w-fit bg-black/75'>
         <Navbar />
         <video className="object-cover w-full h-full absolute -mt-20 -z-10" src={videoMP4} autoPlay loop muted/>
         <div className='flex flex-col justify-center text-center mt-80 text-white'>     

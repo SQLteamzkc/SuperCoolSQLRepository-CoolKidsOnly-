@@ -23,7 +23,7 @@ function Read() {
     return (
         <div className='flex-col'>
           <Navbar />
-            <form className='bg-gray-200 text-center relative px-10 py-6 pb-4 my-10 max-w-3xl mx-auto rounded-3xl'>
+            <form className='bg-gray-200 text-center relative px-10 py-6 pb-4 my-20 max-w-3xl mx-auto rounded-3xl'>
                 <h1 className='font-bold text-3xl'>Look For a Record!</h1>
                 <input className='border border-gray-400 block py-2 my-2 px-4 w-full rounded focus:outline-none hover:border-blue-300 focus:border-blue-600' type='text' placeholder="Player ID" onChange={(e) => setPlayerIDReg(e.target.value)}/>
                 <div className='grid grid-cols-1 grid-rows-2 items-center place-items-center'>
@@ -34,7 +34,7 @@ function Read() {
             <div className='pb-24'>
               <div className="bg-gray-200 rounded-xl container mx-auto">
                   <div className="w-full">
-                    <div className="max-w-full overflow-x-hidden">
+                    <div className="max-w-full overflow-x-scroll">
                       <table className="w-full table-auto">
                         <thead>
                           <tr className="text-center">
