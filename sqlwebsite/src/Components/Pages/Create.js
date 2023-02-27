@@ -23,7 +23,6 @@ function Create() {
 
     return (
         <div>
-            <Navbar />
             <body className='flex-col'>
                 <form className='bg-gray-200 text-center relative px-10 py-6 my-32 max-w-3xl mx-auto rounded-3xl'>
                     <h1 className='font-bold text-3xl'>Create a New Record!</h1>
