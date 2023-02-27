@@ -1,9 +1,13 @@
 import React, {useState} from 'react'
+import Navbar from '../Navbar'
 
 function Update() {
   return (
     <div className=''>
-        Update
+        <Navbar />
+        <div>
+          update
+        </div>
     </div>
   )
 }

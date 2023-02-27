@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import axios from 'axios'
+import Navbar from '../Navbar';
 
 function Read() {
     const [playerIDReg, setPlayerIDReg] = useState("")
@@ -20,8 +21,8 @@ function Read() {
     };
 
     return (
-
         <div className='flex-col'>
+          <Navbar />
             <form className='bg-gray-200 text-center relative px-10 py-6 pb-4 my-10 max-w-3xl mx-auto rounded-3xl'>
                 <h1 className='font-bold text-3xl'>Look For a Record!</h1>
                 <input className='border border-gray-400 block py-2 my-2 px-4 w-full rounded focus:outline-none hover:border-blue-300 focus:border-blue-600' type='text' placeholder="Player ID" onChange={(e) => setPlayerIDReg(e.target.value)}/>
