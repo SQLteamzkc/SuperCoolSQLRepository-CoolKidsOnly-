@@ -4,7 +4,7 @@ import {FiDatabase} from 'react-icons/fi'
 
 const Navbar = () => {
   return (
-    <div className='w-full h-20 flex justify-between items-center px-8 text-black bg-transparent rounded-b-2xl '>
+    <div className='w-full h-20 flex justify-between items-center px-8 text-black bg-transparent rounded-b-2xl absolute'>
         <Link to="/">
             <h1 className='flex text-2xl font-bold items-center mr-4 text-[#f29111] min-w-fit'><FiDatabase className='text-[#00758f] text-4xl'/>Esports DB</h1>
         </Link>

@@ -14,7 +14,7 @@ function Delete() {
   };
 
   return (
-    <div className='w-full h-full'>
+    <div className='flex justify-center w-full h-screen bg-black/75'>
         <body className='flex-col'>
                 <form className='bg-gray-200 text-center relative px-10 py-6 my-52 max-w-3xl mx-auto rounded-3xl'>
                     <h1 className='font-bold text-3xl'>Delete a Record!</h1>

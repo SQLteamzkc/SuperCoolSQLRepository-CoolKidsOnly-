@@ -1,12 +1,11 @@
 import React, {useState} from 'react'
-import Navbar from '../Navbar'
+
 
 function Update() {
   return (
-    <div className=''>
-        <Navbar />
-        <div>
-          update
+    <div className='flex justify-center w-full h-screen bg-black/75'>
+        <div className='absolute top-[400px] text-white font-bold text-3xl'>
+          Still Gotta Make The Update Function...
         </div>
     </div>
   )
