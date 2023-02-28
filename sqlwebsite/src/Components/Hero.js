@@ -7,7 +7,7 @@ function Hero() {
   return (
     <div className='w-full h-screen'>
         <video className="w-full h-full object-cover" src={videoMP4} autoPlay loop muted/>
-        <div className='absolute top-[350px] w-full text-center'>
+        <div className='absolute top-[40vh] w-full text-center'>
           <h1 className='text-white text-3xl font-bold'>
             Welcome to the Esports Database
           </h1>
