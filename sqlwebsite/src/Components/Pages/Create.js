@@ -23,7 +23,7 @@ function Create() {
 
     return (
         <div className='flex justify-center w-full h-screen bg-black/75 min-h-0'>
-            <form className='absolute top-[30vh] max-h-fit max-w-3xl w-full text-center bg-gray-200 p-6 rounded-3xl'>
+            <form className='fixed top-[10vh] mt-20 max-h-fit max-w-3xl w-full text-center bg-gray-200 p-6 rounded-3xl'>
                 <h1 className='font-bold text-3xl'>Create a New Record!</h1>
                 <input className='border border-gray-400 block py-2 my-2 px-4 w-full rounded focus:outline-none hover:border-blue-300 focus:border-blue-600' type='text' placeholder="First Name" onChange={(e) => setFirstNameReg(e.target.value)}/>
                 <input className='border border-gray-400 block py-2 my-2 px-4 w-full rounded focus:outline-none hover:border-blue-300 focus:border-blue-600' type='text' placeholder="Last Name" onChange={(e) => setLastNameReg(e.target.value)}/>

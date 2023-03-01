@@ -22,7 +22,7 @@ function Read() {
 
     return (
       <div className='flex justify-center w-full h-screen bg-black/75'>
-        <form className='absolute top-[20vh] max-w-3xl max-h-fit w-full text-center bg-gray-200 p-6 rounded-3xl'>
+        <form className='fixed top-[15vh] mt-20 max-w-3xl max-h-fit w-full text-center bg-gray-200 p-6 rounded-3xl'>
           <h1 className='font-bold text-3xl'>Look For a Record!</h1>
           <input className='border border-gray-400 block py-2 my-2 px-4 w-full rounded focus:outline-none hover:border-blue-300 focus:border-blue-600' type='text' placeholder="Player ID" onChange={(e) => setPlayerIDReg(e.target.value)}/>
            <div className=' grid-rows-2 items-center place-items-center'>
@@ -30,7 +30,7 @@ function Read() {
              <button type="button" className="bg-sky-500 px-4 py-1 rounded-xl m-2 hover:bg-sky-600 border-2 border-sky-500" onClick={Readall}>Show All Records</button>
           </div>
         </form>
-        <div className="absolute top-[50vh] bg-gray-200 rounded-3xl max-w-full">
+        <div className="fixed top-[30vh] mt-64 bg-gray-200 rounded-3xl max-w-full">
           <div className="">
             <div className="overflow-x-scroll">
               <table className="w-full">
